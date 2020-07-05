@@ -1,6 +1,9 @@
+"""Author: Urchade Z.
+"""
 from torch.utils.data import DataLoader
 from model import Classifier
 from dataset import TrainDataset, Preprocessor, TestDataset
+
 from trainer import ClassifierTrainer
 from sklearn.metrics import balanced_accuracy_score
 import pandas as pd
