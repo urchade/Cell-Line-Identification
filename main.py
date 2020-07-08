@@ -26,7 +26,7 @@ model = Classifier().cuda()
 trainers = ClassifierTrainer(model, train_loader, val_loader,
                              metric=balanced_accuracy_score)
 
-trainers.train(max_epoch=7, patience=1)
+trainers.train(max_epoch=5, patience=1)
 
 # Visualization
 trainers.plot_cm()
